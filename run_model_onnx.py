@@ -110,7 +110,7 @@ if __name__ == "__main__":
     model_detect = ort.InferenceSession('models/detect-person.onnx')
 
     # Load class names and preprocessing transform
-    class_names = ['person']  # Assuming 'person' is the only class for simplicity
+    class_names = ['person']  
     transform = load_preprocessing()
 
     # Load the embedding DataFrame
